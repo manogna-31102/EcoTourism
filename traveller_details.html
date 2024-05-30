@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="traveller_details.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <div>
+                <a href="home_inner.html"><img id="logo" src="images/logo.jpg"></a>
+            </div>
+            <ul>
+              <li><a href="home_inner.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+              <li><a href="packages.html"><i class="fa fa-fw fa-briefcase"></i>Packages</a></li>
+              <li><a href="home.html"><i class="fa fa-fw fa-user"></i>SignOut</a></li>
+          </ul>
+          </nav>
+          <div class="info">
+            <h2>Personal Details</h2>
+            <div class="container">
+                <form>
+                <label>Person 1:</label>
+                <span>Name</span><input class="text" type="text">
+                <span>Aadhar</span><input class="text" type="number">
+                <span>Age</span><input class="text" type="number"><br><br>
+                <center><input class="button" type="submit" value="submit"></center>
+                </form>
+            </div>
+    </body>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+</html>

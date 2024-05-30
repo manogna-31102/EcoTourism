@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Invoice</title>
+        <link rel="stylesheet" href="invoice.css">
+        <link rel="stylesheet" href="navbar.css">
+    </head>
+    <body>
+        <header><h1>Invoice</h1></header>
+        <article>
+            <address contenteditable><p align="left"><img src="images/logo.jpg"></p></address>
+            <table class="meta">
+                <tr>
+                    <th><span contenteditable>Invoice Id</span></th>
+                    <td><span contenteditable>" + (invoice_id+10000) + "</span></td>
+                </tr>
+                <tr>
+                    <th><span contenteditable>Invoice Date</span></th>
+                    <td><span contenteditable>" + invoice_date + "</span></td>
+                </tr>
+                <tr>
+                    <th><span contenteditable>Customer Name</span></th>
+                    <td><span contenteditable>" + name + "</span></td>
+                </tr>
+                <tr>
+                    <th><span contenteditable>Customer Email</span></th>
+                    <td><span contenteditable>" + emailid + "</span></td>
+                </tr>
+            </table>
+            <table class="inventory">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Items Included</th>
+                        <th>Travel Date</th>
+                        <th>Price per head</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2"><span contenteditable>" + place + "</span></td>
+                        <td><span contenteditable>" + transport + "</span></td>
+                        <td rowspan="2"><span contenteditable>" + travel_date + "</span></td>
+                        <td rowspan="2"><span contenteditable>Rs.</span><span contenteditable>" + (amount) + "/-</span></td>
+                    </tr>
+                    <tr>
+                        <td><span contenteditable>Hotel</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="inventory">
+                <thead>
+                    <tr>
+                        <th>Person Name</th>
+                        <th>Age</th>
+                        <th>Aadhar Card Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span contenteditable>" + name_1 + "</span></td>
+                        <td ><span contenteditable>" + age_1 + "</span></td>
+                        <td ><span contenteditable>" + aadhar_1 + "</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <table class="total">
+                <tr>
+                    <th><span contenteditable>No.of Persons</span></th>
+                    <td><span contenteditable>" + persons + "</span></td>
+                </tr>
+                <tr>
+                    <th>Total</span></th>
+                    <td><span contenteditable data-prefix>Rs.</span><span contenteditable>" + (amount*persons) + "/-</span></td>
+                </tr>
+            </table>
+        </article>
+        <div id="thankyou">
+            <p>Thank you for choosing Ecotourism<br><br>Have a nice journey!</p>
+        </div>
+        <div id="footer" align="center">
+            <p>This is an auto generated invoice. All the package details have been mailed to you.<br>Click the button below to print this page.</p><br>
+            <input type="submit" id="print" value="Print" onclick="window.print()"></input>
+        </div>
+    </body>
+</html>
+
+<!-- 
+    create table orders_ecotourism(invoice_id number(10), invoice_date varchar(100), name varchar(100), emailid varchar(100), place varchar(100), transport varchar(100), travel_date varchar(100), amount number(10), persons number(10), total number(10));
+ -->

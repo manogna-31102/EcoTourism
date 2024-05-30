@@ -1,0 +1,50 @@
+﻿<web-app>
+    <servlet>
+        <servlet-name> SignIn </servlet-name>
+        <servlet-class> signin </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> SignIn </servlet-name>
+        <url-pattern> /signin </url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name> SignUp </servlet-name>
+        <servlet-class> signup </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> SignUp </servlet-name>
+        <url-pattern> /signup </url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name> SignIn_ForgotPassword </servlet-name>
+        <servlet-class> signin_forgot </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> SignIn_ForgotPassword </servlet-name>
+        <url-pattern> /signin_forgot </url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name> SignIn_ForgotPasswordValidation </servlet-name>
+        <servlet-class> signin_forgot_validate </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> SignIn_ForgotPasswordValidation </servlet-name>
+        <url-pattern> /signin_forgot_validate </url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name> Booking </servlet-name>
+        <servlet-class> booking </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> Booking </servlet-name>
+        <url-pattern> /booking </url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name> Invoice </servlet-name>
+        <servlet-class> invoice </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name> Invoice </servlet-name>
+        <url-pattern> /invoice </url-pattern>
+    </servlet-mapping>
+</web-app>

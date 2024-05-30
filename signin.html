@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signin.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ecotourism</title>
+</head>
+<body>
+  <nav id="navbar">
+    <div>
+      <a href="home.html"><img id="logo" src="images/logo.jpg"></a>
+    </div>
+    <ul>
+      <li><a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+      <li><a href="signin.html"><i class="fa fa-fw fa-user"></i>Signin</a></li>
+    </ul>
+  </nav>
+  <div class="cont">
+    <div class="sign-in">
+      <form action="./signin">
+        <h2>Sign In</h2>
+        <label>Email Address<input type="email" name="emailid"></label>
+        <label>Password<input type="password" name="password"></label>
+        <button class="submit" type="submit">Sign In</button>
+        <a href="signin_forgot.html" target="_blank"><p class="forgot-pass">Forgot Password?</p></a>
+      </form>
+    </div>
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <br><br><br>
+          <h2>New here?</h2><br>
+          <p>Create an account.</p>
+        </div>
+        <div class="img-text m-in">
+          <br><br><br>
+          <h2>Already have an account?</h2><br>
+          <p>Just sign-in.</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Sign Up</span>
+          <span class="m-in">Sign In</span>
+        </div>
+      </div>
+      <div class="sign-up">
+        <form action="./signup">
+          <h2>Sign Up</h2>
+          <label>Name<input type="text" name="name"></label>
+          <label>Email<input type="email" name="emailid"></label>
+          <label>Password<input type="password" name="password"></label>
+          <label>Confirm Password<input type="password"></label>
+          <label>Security question<input type="text" name="question"></label>
+          <label>Security answer<input type="text" name="answer"></label>
+          <button type="submit" class="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="signin.js"></script>
+</body>
+</html>

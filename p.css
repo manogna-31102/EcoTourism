@@ -1,0 +1,141 @@
+.place{
+    font-family: 'Kalam';
+    text-align: center;
+    width: 93%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 20px;
+    margin-top: 120px;
+}
+#placedes{
+    animation:fadeInL 2s;
+    box-shadow: 5px 5px 2px #888888;
+    transition: ease;
+}
+#img{
+    animation: fadeInL 3s;
+    box-shadow: 5px 5px 2px #888888; 
+    transition: ease;
+}
+
+#hotelimg{
+    animation: fadeInL 4s;
+    box-shadow: 5px 5px 2px #888888; 
+}
+
+#hoteldes{
+    animation: fadeInL 5s;
+    box-shadow: 5px 5px 2px #888888; 
+
+}
+@keyframes fadeInL {
+    0% { opacity: 0; transform: translateX(20px);}
+    100% { opacity: 1; transform: translateX(0);}
+  }
+  .hotel{
+    font-family: 'Kalam';
+    text-align: center;
+    width: 93%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+.hotelic{
+    float:left;
+    display: flex;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+#transport{
+    font-family: 'Kalam';
+    text-align: left; 
+    animation: fadeInL 4s;
+    box-shadow: 5px 5px 2px #888888; 
+    
+}
+#date{
+    font-family: 'Kalam';
+    text-align: center; 
+    animation: fadeInL 4s;
+    box-shadow: 5px 5px 2px #888888; 
+}
+#person{
+    font-family: 'Kalam';
+    text-align: center; 
+    animation: fadeInL 4s;
+    box-shadow: 5px 5px 2px #888888; 
+}
+.btn
+{
+  background-image: linear-gradient(45deg, #cc2b5e  0%, #b326b8 51%, #cc2b5e 100%);
+  border-radius: 40%;
+  animation: fadeInL 4s;
+  background-size: 200% auto;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #ffffff;
+  box-shadow: 2px 2px 4px #000000;;
+  font-family: 'Kalam';
+  transition: 0.5s;
+}
+.btn:hover {
+    background-position: right center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: none;
+    font-weight: normal;
+}
+.btn:active {
+    transform: scale(0.95);
+}
+#hide{
+    visibility: hidden;
+}
+input{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+label{
+     font-size: 15px;
+}
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 35px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: block;
+    visibility: visible;
+    border: 2px solid rgb(2, 2, 2);
+}
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background:linear-gradient(45deg, #cc2b5e  0%, #b326b8 21%, #cc2b5e 100%);
+    content: '';
+    display: block;
+    visibility: visible;
+    border: 2px solid rgb(0, 0, 0);
+}
+input[type='date'], input[type='number'] {
+    font-family: 'Kalam';
+}
+p {
+    text-align: justify;
+}

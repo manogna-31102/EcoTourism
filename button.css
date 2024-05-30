@@ -1,0 +1,30 @@
+.button {
+    margin: 10px;
+    padding: 10px 18px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-family: 'Kalam';
+    font-size: 18px;
+    font-weight: bolder;
+    box-shadow: 0px 0px 14px -7px rgb(53, 234, 200);
+    background-image: linear-gradient(45deg, rgb(53, 234, 200) 0%, rgb(38, 255, 178)  51%, rgb(53, 202, 200)  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button:hover {
+    background-position: right center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .button:active {
+    transform: scale(0.95);
+  }

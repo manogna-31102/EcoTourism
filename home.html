@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>EcoTourism</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav id="navbar">
+          <div>
+             <a href="home.html"><img id="logo" src="images/logo.jpg"></a>
+          </div>
+          <ul>
+            <li><a href="signin.html"><i class="fa fa-fw fa-user"></i>SignIn</a></li>
+          </ul>
+        </nav>
+        <section>
+            <img src="images/clouds.png" id="clouds">
+            <h2  id="text">EcoTourism</h2>
+            <img src="images/plane.png" id="plane">
+            <img src="images/monuments.png" id="monuments">
+            <img src="images/clouds_bottom.png" id="clouds_bottom">
+        </section>
+        <div class="sec">
+          <h2>EcoTourism</h2>
+          <p>Tourism has shown phenomenal growth in the past decades. Travel tourism has grown rapidly, with a huge number of tourists from all over the world showing interest 
+            in journeying across nations. Main appeals like hill stations, beaches, historical areas, backwaters, pilgrimage sites etc., are capturing the heart of people worldwide.
+             Furthermore, studies have shown travelling to be a great stress reliever for most people which enables them to perform their tasks better upon returning, boosting the attraction 
+             surrounding tours. However, seeing that the tourism industry has grown far and wide, it comes with its own share of setbacks. <br><br>
+            Travelling is not a cheap activity. Almost everyone has dreams of visiting various places with their friends and family. However, they have no choice but to let
+             go of those dreams due to financial issues. Our motto with this website is, "Tourism- The Eco Way." The 'Eco' indicating economical.
+              By combining multiple trips into one large trip, costs can be cut down for all the parties. Such affordable services have the capacity to increase the 
+              annual income of the tourism industry by huge margins. They will also help more and more people to travel, thus expanding the appeal around backpacking.</p>
+        </div>
+        <div>
+          <hr>
+        </div>
+        <div class="quote">
+          <p>
+            Plan your next tour in an eco-friendly and sustainable way.
+            <p style="font-family: 'Lucida Sans'; font-size: 15px; padding-top: 20px;">&#169; Designed & Developed by II Yr IT-B Team-3 </p>
+          </p>
+        </div>
+    </body>
+    <script>
+      let clouds = document.getElementById('clouds');
+      let text = document.getElementById('text');
+      let plane = document.getElementById('plane');
+      let monuments = document.getElementById('monuments');
+      let clouds_bottom = document.getElementById('clouds_bottom');
+
+      window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        monuments.style.top = value * 0.4 + 'px';
+        clouds_bottom.style.top = value * 0 + 'px';
+        clouds.style.top = value * 0 + 'px';
+        plane.style.left = value * 0.75 + 'px'; 
+      })
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-70px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
+</html>
+<!-- background:#0ED2F7; -->

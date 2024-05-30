@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>EcoTourism_Packages</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="packages.css">
+        <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <div>
+               <a href="home_inner.html"><img id="logo" src="images/logo.jpg"></a>
+            </div>
+            <ul>
+              <li><a href="home_inner.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+              <li><a href="packages.html"><i class="fa fa-fw fa-briefcase"></i>Packages</a></li>
+              <li><a href="home.html"><i class="fa fa-fw fa-user"></i>SignOut</a></li>
+            </ul>
+          </nav>
+          <div class="package">
+            <h2>Packages</h2>
+          </div>
+          <div class="list">
+            <a href="p1.html"><div class="pimg"><img style="height: 200px;width:200px;" src="images/p1_1.jpg"><br><h1><b>Andaman</b></h1></div></a>
+            <a href="p2.html"><div class="pimg"><img style="height: 200px;width:200px;" src="images/p2_5.jpeg"><br><h1><b>Coorg</b></h1></div></a>
+            <a href="p3.html"><div class="pimg"><img style="height: 200px;width:200px;" src="images/p3_1.jpg"><br><h1><b>Goa</b></h1></div></a>
+            <a href="p4.html"><div class="pimg"><img style="height: 200px;width:200px;" src="images/p4_4.jpg"><br><h1><b>Ladakh</b></h1></div></a>
+            <a href="p5.html"><div class="pimg"><img style="height: 200px;width:200px;" src="images/p5_1.jpg"><br><h1><b>Manali</b></h1></div></a>
+            <a href="p6.html"><div class="pimg"><img style="height: 200px;width:200px;" src="images/p6_4.jpg"><br><h1><b>Nainital</b></h1></div></a>
+            <a href="p7.html"><div class="pimg"><img style="height: 200px;width:200px;" src="images/p7_4.jpg"><br><h1><b>Ooty</b></h1></div></a>
+            <a href="p8.html"><div class="pimg"><img style="height: 200px;width:200px;" src="images/p8_3.jpg"><br><h1><b>Udaipur</b></h1></div></a>
+          </div>
+    </body>
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-70px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+      </script>
+</html>

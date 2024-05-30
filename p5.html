@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>Manali</title>
+        <link rel="stylesheet" href="p.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="button.css">
+        <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <div>
+                <a href="home_inner.html"><img id="logo" src="images/logo.jpg"></a>
+            </div>
+            <ul>
+              <li><a href="home_inner.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+              <li><a href="packages.html"><i class="fa fa-fw fa-briefcase"></i>Packages</a></li>
+              <li><a href="home.html"><i class="fa fa-fw fa-user"></i>SignOut</a></li>
+          </ul>
+          </nav>
+        <div class="place">
+            <table style="margin-left: 10px;">
+                <tr>
+                    <td style="width:600px;height:250px; background-image: linear-gradient(45deg, rgb(53, 234, 200) 0%, rgb(53, 202, 200)  100%);padding: 10px;" id="placedes"><h1 style="text-align: center;text-shadow: 2px 2px 2px #ffffff;">
+                        <b>Manali</b></h1>
+                        <p><justify>
+                            One of the most popular hill stations in Himachal, Manali offers the most magnificent views of the Pir Panjal and the Dhauladhar ranges
+                            covered with snow for most parts of the year. Manali has many trekking options around it, making it a great base for exploring this side 
+                            of Himalayas. River Beas provides great rafting options in the nearby town of Kullu. Adjoining Parvati river, lies the Parvati Valley 
+                            with  Kasol, Manikaran, Tosh and small villages attracting travellers for longer stays. Atal Tunnel now allows travellers to reach Sissu 
+                            within a few hours making Spiti way more accessible.
+                        </justify> </p> </td>
+                    <td id="placeimg">
+                        <img id="img" src="images/p5_1.jpg" style="height: 360px;width: 520px;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="hotel">
+            <table   style="margin-left: 10px;">
+                <tr>
+                    <td>
+                        <img id="hotelimg" src="images/p5_h.jpg" style="height: 380px;width: 530px;">
+                    </td>
+                    <td id="hoteldes" style="width:600px;height:250px; background-image: linear-gradient(45deg, rgb(53, 234, 200) 0%, rgb(53, 202, 200)  100%); padding: 10px;" id="hoteldes">
+                    <h1 style="text-align: center;text-shadow: 2px 2px 2px #ffffff;"><b>Hotel</b></h1>
+                    <p>
+                        <b>Hotel Greenfields</b>
+                        Located within 2.7 km of the beautiful Manali hill station and the sacred Hadimba Devi Temple, Hotel Greenfields provides 24-hour front desk for the convenience of the guests. It offers free WiFi throughout the property.
+                        The spacious and bright air-conditioned rooms have a flat-screen satellite TV, seating area with sofa and work desk. The attached bathrooms come with free toiletries and a shower.
+                        Hotel Greenfields is located just 5.4 km from the scenic Beas River and 42.8 km from Kullu. It is 3.7 km from the Manali Bus Station, 52 km from the Bhuntar Airport and 165 km from the Joginder Nagar Railway Station.
+                        The guests can approach the tour desk for car rental services. The hotel features terrace and shared lounge/TV area. The dry cleaning, ironing service and laundry facilities are available at a surcharge.
+                    </p>
+                    <a class="hotelic" href="#"><i class="fa fa-fw fa-mobile" style="font-size: 1.5em;margin-left: 295px;"></i>
+                        01902252199
+                    </a><br>
+                    <a class="hotelic" href="https://www.google.com/maps/place/Hotel+Greenfields/@32.2503995,77.1777202,15z/data=!4m2!3m1!1s0x0:0xb5e4c22e5926af3f?sa=X&ved=2ahUKEwicifuRuJT5AhXf-TgGHX0HCRgQ_BJ6BAhvEAU"><i class="fa fa-fw fa-map-marker" style="font-size: 1.5em;margin-left: 295px;"></i><u>Google Maps</u></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table style="margin-left: 60px; margin-bottom: 60px;" cellspacing="40px">
+                <form action="./booking">
+                    <tr>
+                        <td id="transport" style="width: 200px;height:200px;background-image: linear-gradient(45deg, rgb(53, 234, 200) 0%, rgb(53, 202, 200)  100%);">
+                            <h1 style="text-shadow: 2px 2px 2px #ffffff;padding-left: 40px;padding-top: 20px;"><b>Transport</b></h1><br>
+                            <input type="radio" name="radio-choice" id="radio-choice-1" value="Bus" checked="checked" />
+                            <label for="radio-choice-1"><a href="#"><i class="fa fa-fw fa-bus" style="font-size: 1em; color: #000000;"></i></a>Bus</label><br>
+
+                            <input type="radio" name="radio-choice" id="radio-choice-2" value="Train"  />
+                            <label for="radio-choice-2"><a href="#"><i class="fa fa-fw fa-train" style="font-size: 1em; color: #000000;"></i></a>Train</label><br>
+
+                            <input type="radio" name="radio-choice" id="radio-choice-3" value="Flight"  />
+                            <label for="radio-choice-3"><a href="#"><i class="fa fa-fw fa-plane" style="font-size: 1em; color: #000000;"></i></a>Flight</label><br> 
+                        </td>
+                        <td id="date" style="width: 200px;height:200px;background-image: linear-gradient(45deg, rgb(53, 234, 200) 0%, rgb(53, 202, 200)  100%);">
+                            <h1 style="text-shadow: 2px 2px 2px #ffffff;"><b>Travel Date</b></h1><p style="margin-left: 30px;">(tour period : 7days)</p><br>
+                            <input name="travel_date" style="margin-left:0px;margin-bottom: 30px;" type="date" id="datePickerId"> 
+                        </td>
+                        <td id="person" style="width: 200px;height:200px;background-image: linear-gradient(45deg, rgb(53, 234, 200) 0%, rgb(53, 202, 200)  100%);">
+                            <h1 style="text-shadow: 2px 2px 2px #ffffff;"><b>Number of Persons</b></h1>
+                            <input align="center" name="persons" style="margin-left: 0px; width: 40px;margin-bottom:55px;"type="number" value="1" min="1">
+                        </td>
+                        <td>
+                            <input style="margin-left: 140px;" type="submit" value="Book" class="btn" name="place">
+                        </td>
+                    </tr>
+                    <input type="text" name="place" value="Manali" id="hide">
+                </form>
+            </table>
+        </div>
+
+        <script language="javascript" type="text/javascript">
+            datePickerId.min = new Date().toISOString().split("T")[0];
+            datePickerId.value = new Date().toISOString().substr(0, 10);
+            var images = new Array()
+            images[0] = "images/p5_1.jpg";
+            images[1] = "images/p5_2.jpg";
+            images[2] = "images/p5_3.jpg";
+            images[3] = "images/p5_4.jpeg";
+            images[4] = "images/p5_5.jpg";
+            images[5] = "images/p5_6.jpg";
+            setInterval("changeImage()", 3000);
+            var x=0;
+    
+            function changeImage()
+            {
+                    document.getElementById("img").src=images[x]
+                    x++;
+                    if (images.length == x) 
+                    {
+                        x = 0;
+                    }
+            }
+        </script>
+    </body>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-70px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+</html>
